@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rapport Communication — NewImages Festival 2026</title>
+  <title>Rapport Communication, NewImages Festival 2026</title>
   <style>
     /* ─── RESET & BASE ─────────────────────────────────────── */
     @font-face {
@@ -518,27 +518,53 @@
       font-family: var(--mono);
       letter-spacing: 0.1em;
     }
+
+    .typewrite {
+      white-space: pre-line;
+      min-height: 1em;
+    }
+
+    #main-content {
+      display: none;
+      opacity: 0;
+      transform: translateY(10px) scale(0.992);
+    }
+
+    #main-content.reveal-ready {
+      display: block;
+      transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    #main-content.is-visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
   </style>
 </head>
 <body>
 
   <!-- ░░░ GREETING ░░░ -->
-  <div style="padding: 28px 0 0; font-size: 2rem; color: var(--muted); font-family: 'AntonyLark', cursive; font-style: normal;">
-    Bonjour Mme Zerbit, voici nos supports de communication pour la Semaine de l'industrie.
-  </div>
+  <div
+    id="greeting-text"
+    class="typewrite"
+    data-typewrite="Bonjour Mme Zerbit, voici nos supports de communication pour la Semaine de l'industrie."
+    style="padding: 28px 0 0; font-size: 2rem; color: var(--muted); font-family: 'AntonyLark', cursive; font-style: normal;"
+  ></div>
+
+  <div id="main-content">
 
   <!-- ░░░ HERO ░░░ -->
   <header class="hero">
     <div class="hero-top">
-      <p class="kicker">Rapport de communication — IMAC 2026</p>
+      <p class="kicker">Rapport de communication, IMAC 2026</p>
       <p class="authors">BRAUDEL Max<br>BOUKHORISSA Nabil<br>BREDEAU Kellian</p>
     </div>
     <h1>NewImages Festival</h1>
-    <p class="subtitle">Présentation de nos supports de communication pour la 9e édition du NewImages Festival — réalisée dans le cadre de la <strong style="color:var(--text)">Semaine de l'industrie</strong>, lors d'une visite à la Cité des sciences et de l'industrie, Paris.</p>
+    <p class="subtitle">Présentation de nos supports de communication pour la 9e édition du NewImages Festival, réalisée dans le cadre de la <strong style="color:var(--text)">Semaine de l'industrie</strong>, lors d'une visite à la Cité des sciences et de l'industrie, Paris.</p>
     <div class="hero-meta">
-      <span><strong>Supports</strong> — Instagram · LinkedIn · Site web</span>
-      <span><strong>Édition</strong> — 7–12 avril 2026</span>
-      <span><strong>Lieu</strong> — Cité des sciences, Paris</span>
+      <span><strong>Supports</strong>, Instagram · LinkedIn · Site web</span>
+      <span><strong>Édition</strong>, 7–12 avril 2026</span>
+      <span><strong>Lieu</strong>, Cité des sciences, Paris</span>
     </div>
   </header>
 
@@ -557,9 +583,9 @@
 
         <div class="card" style="margin-top: 24px; margin-bottom: 20px; padding: 20px; border-left: 3px solid var(--accent);">
           <h4 style="margin-bottom: 10px;">Contexte de réalisation</h4>
-          <p style="font-size: 0.88rem; margin-bottom: 6px;">Ce travail a été produit dans le cadre de la <strong>Semaine de l'industrie</strong> — visite organisée à la Cité des sciences et de l'industrie. Le NewImages Festival, co-accueilli par la Cité, a constitué notre terrain d'observation et de communication.</p>
-          <p style="font-size: 0.88rem; margin-bottom: 6px;"><strong>Choix du format :</strong> La consigne ne prescrivait pas de stratégie de communication — exercice qui nécessiterait une étude de marché, des benchmarks et des KPIs. Nous avons choisi de produire <strong>trois supports de communication complémentaires</strong> (Instagram, LinkedIn, site web), chacun visant un moment différent du parcours audience. Ce rapport présente et justifie ces supports sans prétendre à une stratégie globale formalisée.</p>
-          <p style="font-size: 0.88rem; margin: 0;"><strong>Collaboration inter-promotions :</strong> Le projet a été coordonné entre étudiants de plusieurs promotions IMAC — répartition des rôles en amont, collecte d'informations sur place lors de la visite, et production des supports en mode collaboratif.</p>
+          <p style="font-size: 0.88rem; margin-bottom: 6px;">Ce travail a été produit dans le cadre de la <strong>Semaine de l'industrie</strong>, visite organisée à la Cité des sciences et de l'industrie. Le NewImages Festival, co-accueilli par la Cité, a constitué notre terrain d'observation et de communication.</p>
+          <p style="font-size: 0.88rem; margin-bottom: 6px;"><strong>Choix du format :</strong> La consigne ne prescrivait pas de stratégie de communication, exercice qui nécessiterait une étude de marché, des benchmarks et des KPIs. Nous avons choisi de produire <strong>trois supports de communication complémentaires</strong> (Instagram, LinkedIn, site web), chacun visant un moment différent du parcours audience. Ce rapport présente et justifie ces supports sans prétendre à une stratégie globale formalisée.</p>
+          <p style="font-size: 0.88rem; margin: 0;"><strong>Collaboration inter-promotions :</strong> Le projet a été coordonné entre étudiants de plusieurs promotions IMAC, répartition des rôles en amont, collecte d'informations sur place lors de la visite, et production des supports en mode collaboratif.</p>
         </div>
 
         <div style="margin-top: 20px;">
@@ -604,45 +630,45 @@
   <section class="section">
     <div class="section-head">
       <span class="section-num">01</span>
-      <h2>Instagram — Carrousel</h2>
+      <h2>Instagram, Carrousel</h2>
     </div>
 
     <!-- Images carrousel -->
     <div class="carousel-strip">
       <div>
         <div class="media-wrap" data-group="all">
-          <img src="assets/instagram/Instagram full post - 1.png" alt="Slide 1 — Accroche">
+          <img src="assets/instagram/Instagram full post - 1.png" alt="Slide 1, Accroche">
           <span class="media-tooltip"><img src="assets/icons/Arrow Selector Tool Icon.svg" alt="">Cliquez pour agrandir</span>
         </div>
-        <p class="img-caption">Slide 1 — Accroche</p>
+        <p class="img-caption">Slide 1, Accroche</p>
       </div>
       <div>
         <div class="media-wrap" data-group="all">
-          <img src="assets/instagram/Instagram full post - 2.png" alt="Slide 2 — Présentation">
+          <img src="assets/instagram/Instagram full post - 2.png" alt="Slide 2, Présentation">
           <span class="media-tooltip"><img src="assets/icons/Arrow Selector Tool Icon.svg" alt="">Cliquez pour agrandir</span>
         </div>
-        <p class="img-caption">Slide 2 — Présentation</p>
+        <p class="img-caption">Slide 2, Présentation</p>
       </div>
       <div>
         <div class="media-wrap" data-group="all">
-          <img src="assets/instagram/Instagram full post - 3.png" alt="Slide 3 — Programme">
+          <img src="assets/instagram/Instagram full post - 3.png" alt="Slide 3, Programme">
           <span class="media-tooltip"><img src="assets/icons/Arrow Selector Tool Icon.svg" alt="">Cliquez pour agrandir</span>
         </div>
-        <p class="img-caption">Slide 3 — Programme</p>
+        <p class="img-caption">Slide 3, Programme</p>
       </div>
       <div>
         <div class="media-wrap" data-group="all">
-          <img src="assets/instagram/Instagram full post - 4.png" alt="Slide 4 — Activités">
+          <img src="assets/instagram/Instagram full post - 4.png" alt="Slide 4, Activités">
           <span class="media-tooltip"><img src="assets/icons/Arrow Selector Tool Icon.svg" alt="">Cliquez pour agrandir</span>
         </div>
-        <p class="img-caption">Slide 4 — Activités</p>
+        <p class="img-caption">Slide 4, Activités</p>
       </div>
       <div>
         <div class="media-wrap" data-group="all">
-          <img src="assets/instagram/Instagram full post - 5.png" alt="Slide 5 — Infos pratiques">
+          <img src="assets/instagram/Instagram full post - 5.png" alt="Slide 5, Infos pratiques">
           <span class="media-tooltip"><img src="assets/icons/Arrow Selector Tool Icon.svg" alt="">Cliquez pour agrandir</span>
         </div>
-        <p class="img-caption">Slide 5 — Infos pratiques &amp; CTA</p>
+        <p class="img-caption">Slide 5, Infos pratiques &amp; CTA</p>
       </div>
     </div>
 
@@ -650,7 +676,7 @@
       <div>
         <h3>Rôle du support</h3>
         <p>Le carrousel Instagram est le premier point de contact visuel avec le public jeune. Son format multi-slides oblige à l'action (swiper) et permet de <strong>délivrer l'information de façon progressive</strong>, comme un mini-parcours narratif.</p>
-        <p>Chaque slide répond à une question : <em>Qui ? Quoi ? Où ? Quand ? Comment ?</em> — structurant la mémorisation sans surcharger la première image.</p>
+        <p>Chaque slide répond à une question : <em>Qui ? Quoi ? Où ? Quand ? Comment ?</em>, structurant la mémorisation sans surcharger la première image.</p>
       </div>
       <div>
         <h3>Public cible</h3>
@@ -672,7 +698,7 @@
         <h4>Choix créatifs</h4>
         <ul>
           <li>Format 1080×1440 (natif Instagram)</li>
-          <li>Dégradés chauds — orange, violet, bleu</li>
+          <li>Dégradés chauds, orange, violet, bleu</li>
           <li>Vignettes style "autocollants / polaroïds"</li>
           <li>Typo manuscrite (titres) + sans-serif bold</li>
         </ul>
@@ -693,51 +719,51 @@
   <section class="section">
     <div class="section-head">
       <span class="section-num">02</span>
-      <h2>LinkedIn — Posts</h2>
+      <h2>LinkedIn, Posts</h2>
     </div>
 
     <!-- Images LinkedIn -->
     <div class="linkedin-grid">
       <div class="linkedin-post">
         <div class="media-wrap" data-group="all">
-          <img src="assets/linkedin/Linkedin Post + Link on Website.png" alt="Post LinkedIn — Texte + lien site">
+          <img src="assets/linkedin/Linkedin Post + Link on Website.png" alt="Post LinkedIn, Texte + lien site">
           <span class="media-tooltip"><img src="assets/icons/Arrow Selector Tool Icon.svg" alt="">Cliquez pour agrandir</span>
         </div>
         <div class="post-tag">
           <span class="tag">Texte</span>
           <span class="tag">Lien site</span>
         </div>
-        <p class="img-caption">Format 1 — Découverte + lien</p>
+        <p class="img-caption">Format 1, Découverte + lien</p>
       </div>
       <div class="linkedin-post">
         <div class="media-wrap" data-group="all">
-          <img src="assets/linkedin/Linkedin Post + Photo.png" alt="Post LinkedIn — Photo + texte">
+          <img src="assets/linkedin/Linkedin Post + Photo.png" alt="Post LinkedIn, Photo + texte">
           <span class="media-tooltip"><img src="assets/icons/Arrow Selector Tool Icon.svg" alt="">Cliquez pour agrandir</span>
         </div>
         <div class="post-tag">
           <span class="tag">Photo</span>
           <span class="tag">Installation</span>
         </div>
-        <p class="img-caption">Format 2 — Visuel + œuvre</p>
+        <p class="img-caption">Format 2, Visuel + œuvre</p>
       </div>
       <div class="linkedin-post">
         <div class="media-wrap" data-group="all">
-          <img src="assets/linkedin/Linkedin Short post.png" alt="Post LinkedIn — Texte court">
+          <img src="assets/linkedin/Linkedin Short post.png" alt="Post LinkedIn, Texte court">
           <span class="media-tooltip"><img src="assets/icons/Arrow Selector Tool Icon.svg" alt="">Cliquez pour agrandir</span>
         </div>
         <div class="post-tag">
           <span class="tag blue">Texte seul</span>
           <span class="tag blue">Reach</span>
         </div>
-        <p class="img-caption">Format 3 — Texte court</p>
+        <p class="img-caption">Format 3, Texte court</p>
       </div>
     </div>
 
     <div class="grid-2" style="margin-bottom: 32px;">
       <div>
         <h3>Rôle du support</h3>
-        <p>LinkedIn cible un public <strong>professionnel et cultivé</strong> — créatifs, étudiants en écoles d'art, acteurs du numérique, curieux de culture tech. Le ton est plus élaboré qu'Instagram : il mise sur l'évocation intellectuelle et la promesse d'expérience singulière.</p>
-        <p>Les trois formats sont choisis <strong>délibérément pour illustrer des contraintes de publication différentes</strong> — démontrant qu'une stratégie LinkedIn se décline selon les situations (budget visuel, portée organique, contraintes éditoriales).</p>
+        <p>LinkedIn cible un public <strong>professionnel et cultivé</strong>, créatifs, étudiants en écoles d'art, acteurs du numérique, curieux de culture tech. Le ton est plus élaboré qu'Instagram : il mise sur l'évocation intellectuelle et la promesse d'expérience singulière.</p>
+        <p>Les trois formats sont choisis <strong>délibérément pour illustrer des contraintes de publication différentes</strong>, démontrant qu'une stratégie LinkedIn se décline selon les situations (budget visuel, portée organique, contraintes éditoriales).</p>
       </div>
       <div>
         <h3>Public cible</h3>
@@ -759,17 +785,17 @@
           <td>Texte + lien</td>
           <td>Introduction poétique au festival (<em>« Plongez dans une œuvre… »</em>), lien vers le site pour approfondir. Génère du trafic direct.</td>
           <td>Grand public qualifié, professionnels curieux</td>
-          <td>Formule idéale — combine accroche émotionnelle et conversion mesurable</td>
+          <td>Formule idéale, combine accroche émotionnelle et conversion mesurable</td>
         </tr>
         <tr>
           <td>Photo + texte</td>
-          <td>Focus sur une installation précise — le chien robot Néo. Humanise le festival, provoque la curiosité via un objet concret inattendu.</td>
+          <td>Focus sur une installation précise, le chien robot Néo. Humanise le festival, provoque la curiosité via un objet concret inattendu.</td>
           <td>Amateurs de tech, communauté IA/robotique</td>
           <td>La photo capte le scroll stop ; l'œuvre est un point d'entrée pour un public non-initié à l'art immersif</td>
         </tr>
         <tr>
           <td>Texte seul</td>
-          <td>Texte court, registre manifeste (<em>« Le futur de l'image n'est pas à venir »</em>). Pas de visuel, pas de lien — format contraint pour maximiser la portée organique.</td>
+          <td>Texte court, registre manifeste (<em>« Le futur de l'image n'est pas à venir »</em>). Pas de visuel, pas de lien, format contraint pour maximiser la portée organique.</td>
           <td>Large audience LinkedIn</td>
           <td>L'absence de lien et de visuel favorise la diffusion par l'algorithme LinkedIn ; format « thought leadership »</td>
         </tr>
@@ -811,13 +837,13 @@
   <section class="section">
     <div class="section-head">
       <span class="section-num">03</span>
-      <h2>Site web — Landing page</h2>
+      <h2>Site web, Landing page</h2>
     </div>
 
     <div class="grid-2" style="margin-bottom: 32px;">
       <div>
         <h3>Rôle du support</h3>
-        <p>La landing page est le <strong>support de conversion central</strong> de la stratégie. Là où les réseaux sociaux suscitent l'envie, le site transforme cette envie en décision de visite. C'est le seul support qui concentre l'intégralité de l'information — programme, œuvres phares, infos pratiques, réservation.</p>
+        <p>La landing page est le <strong>support de conversion central</strong> de la stratégie. Là où les réseaux sociaux suscitent l'envie, le site transforme cette envie en décision de visite. C'est le seul support qui concentre l'intégralité de l'information, programme, œuvres phares, infos pratiques, réservation.</p>
         <p>Format <strong>one-page scrollable</strong> développé en HTML/CSS/JS vanilla, sans dépendance à un framework. Responsive (desktop, tablette, mobile). Hébergé et accessible via le lien ci-dessous.</p>
       </div>
       <div>
@@ -827,18 +853,18 @@
     </div>
 
     <!-- URL réelle -->
-    <p style="margin-bottom: 16px;"><strong>Note importante — Le festival ne nous ayant pas donné accès à un nom de domaine dédié, le site a été hébergé sur le domaine personnel de l'étudiant. C'est vers cette URL que pointent tous les liens et call-to-action présents sur les supports Instagram et LinkedIn.</strong></p>
+    <p style="margin-bottom: 16px;"><strong>Note importante, Le festival ne nous ayant pas donné accès à un nom de domaine dédié, le site a été hébergé sur le domaine personnel de l'étudiant. C'est vers cette URL que pointent tous les liens et call-to-action présents sur les supports Instagram et LinkedIn.</strong></p>
     <div class="link-box">
       <div>
         <div class="url"><a href="https://newimagesfestival.maxbraudel.com/" target="_blank">https://newimagesfestival.maxbraudel.com/</a></div>
-        <div class="note" style="margin-top: 4px;">Hébergé temporairement sur le domaine personnel de l'étudiant — nom de domaine dédié à créer pour la diffusion officielle.</div>
+        <div class="note" style="margin-top: 4px;">Hébergé temporairement sur le domaine personnel de l'étudiant, nom de domaine dédié à créer pour la diffusion officielle.</div>
       </div>
     </div>
 
     <!-- Screenshot site web -->
     <div style="margin-bottom: 32px;">
       <div class="media-wrap" data-href="https://newimagesfestival.maxbraudel.com/" data-group="all">
-        <img src="assets/website.png" alt="Capture d'écran — newimagesfestival.maxbraudel.com">
+        <img src="assets/website.png" alt="Capture d'écran, newimagesfestival.maxbraudel.com">
         <span class="media-tooltip"><img src="assets/icons/Arrow Selector Tool Icon.svg" alt="">Cliquez pour visiter le site web</span>
       </div>
     </div>
@@ -846,18 +872,18 @@
     <div class="grid-2" style="margin-bottom: 0;">
       <div>
         <h3>Direction artistique</h3>
-        <p>Fond sombre (<code style="font-family:var(--mono); font-size:.8em; color:var(--accent);">#0f0f1a</code>) évoquant l'immersion et les salles XR. Accent rose/magenta repris de la communication officielle du festival. Typographie <em>Caveat</em> (manuscrite) pour les titres — cohérence avec le carrousel Instagram. <em>Inter</em> pour le corps de texte.</p>
+        <p>Fond sombre (<code style="font-family:var(--mono); font-size:.8em; color:var(--accent);">#0f0f1a</code>) évoquant l'immersion et les salles XR. Accent rose/magenta repris de la communication officielle du festival. Typographie <em>Caveat</em> (manuscrite) pour les titres, cohérence avec le carrousel Instagram. <em>Inter</em> pour le corps de texte.</p>
         <p>Option dark/light toggle pour l'accessibilité. Animations au scroll pour rythmer la lecture sans complexité.</p>
       </div>
       <div>
         <h3>Structure narrative (AIDA)</h3>
         <p>Le parcours de scroll suit la méthode <strong>AIDA</strong> :</p>
         <ul style="list-style:none; padding:0; font-size:.88rem;">
-          <li style="padding: 4px 0; padding-left: 16px; position: relative;"><span style="position:absolute;left:0;color:var(--accent)">1.</span><strong>Hero</strong> — vidéo immersive + titre + dates (Attention)</li>
-          <li style="padding: 4px 0; padding-left: 16px; position: relative;"><span style="position:absolute;left:0;color:var(--accent)">2.</span><strong>Festival</strong> — chiffres clés, contexte (Intérêt)</li>
-          <li style="padding: 4px 0; padding-left: 16px; position: relative;"><span style="position:absolute;left:0;color:var(--accent)">3.</span><strong>Programme</strong> — sections + vidéos d'ambiance (Intérêt)</li>
-          <li style="padding: 4px 0; padding-left: 16px; position: relative;"><span style="position:absolute;left:0;color:var(--accent)">4.</span><strong>Coups de cœur</strong> — œuvres détaillées (Désir)</li>
-          <li style="padding: 4px 0; padding-left: 16px; position: relative;"><span style="position:absolute;left:0;color:var(--accent)">5.</span><strong>Infos + réservation</strong> — conversion finale (Action)</li>
+          <li style="padding: 4px 0; padding-left: 16px; position: relative;"><span style="position:absolute;left:0;color:var(--accent)">1.</span><strong>Hero</strong>, vidéo immersive + titre + dates (Attention)</li>
+          <li style="padding: 4px 0; padding-left: 16px; position: relative;"><span style="position:absolute;left:0;color:var(--accent)">2.</span><strong>Festival</strong>, chiffres clés, contexte (Intérêt)</li>
+          <li style="padding: 4px 0; padding-left: 16px; position: relative;"><span style="position:absolute;left:0;color:var(--accent)">3.</span><strong>Programme</strong>, sections + vidéos d'ambiance (Intérêt)</li>
+          <li style="padding: 4px 0; padding-left: 16px; position: relative;"><span style="position:absolute;left:0;color:var(--accent)">4.</span><strong>Coups de cœur</strong>, œuvres détaillées (Désir)</li>
+          <li style="padding: 4px 0; padding-left: 16px; position: relative;"><span style="position:absolute;left:0;color:var(--accent)">5.</span><strong>Infos + réservation</strong>, conversion finale (Action)</li>
         </ul>
       </div>
     </div>
@@ -878,7 +904,7 @@
           <li>Vidéo hero en autoplay muté</li>
           <li>Lazy loading des vidéos hors-écran</li>
           <li>Responsive (mobile-first)</li>
-          <li>HTML/CSS/JS vanilla — pas de dépendance</li>
+          <li>HTML/CSS/JS vanilla, pas de dépendance</li>
         </ul>
       </div>
       <div class="analysis-box blue">
@@ -900,7 +926,7 @@
       <h2>Stratégie d'ensemble</h2>
     </div>
 
-    <p style="max-width: 660px; margin-bottom: 32px;">Les trois supports forment un <strong>entonnoir de communication cohérent</strong>. Chacun joue un rôle distinct mais complémentaire, calibré sur un moment précis du parcours de l'audience — de la découverte à la conversion en visiteur physique.</p>
+    <p style="max-width: 660px; margin-bottom: 32px;">Les trois supports forment un <strong>entonnoir de communication cohérent</strong>. Chacun joue un rôle distinct mais complémentaire, calibré sur un moment précis du parcours de l'audience, de la découverte à la conversion en visiteur physique.</p>
 
     <div class="conclusion-grid">
       <div class="funnel-step">
@@ -925,14 +951,17 @@
 
     <div class="card" style="margin-top: 24px; padding: 28px;">
       <h4 style="margin-bottom: 12px;">Cohérence de la stratégie</h4>
-      <p style="font-size: 0.9rem; margin: 0;">Le festival NewImages attire un public varié — amateurs d'art immersif, professionnels XR, grand public. La <strong>cohérence visuelle</strong> entre les trois supports (palette sombre, accent magenta, typographie commune) garantit une identité reconnaissable sur tous les canaux. Chaque support redirige vers le suivant : Instagram et LinkedIn pointent vers le site, le site convertit en réservation. La stratégie est <strong>simple, directe et sans redondance</strong> — adaptée à un événement gratuit dont l'enjeu n'est pas de vendre un billet mais de déclencher le déplacement.</p>
+      <p style="font-size: 0.9rem; margin: 0;">Le festival NewImages attire un public varié, amateurs d'art immersif, professionnels XR, grand public. La <strong>cohérence visuelle</strong> entre les trois supports (palette sombre, accent magenta, typographie commune) garantit une identité reconnaissable sur tous les canaux. Chaque support redirige vers le suivant : Instagram et LinkedIn pointent vers le site, le site convertit en réservation. La stratégie est <strong>simple, directe et sans redondance</strong>, adaptée à un événement gratuit dont l'enjeu n'est pas de vendre un billet mais de déclencher le déplacement.</p>
     </div>
   </section>
 
   <!-- ░░░ CLOSING ░░░ -->
-  <div style="padding: 48px 0 0; font-size: 2rem; color: var(--muted); font-family: 'AntonyLark', cursive; font-style: normal; line-height: 1.7;">
-    Merci de nous avoir lu,<br>
-    <span style="font-size: 1.4rem;">Max, Nabil &amp; Kellian</span>
+  <div
+    class="typewrite"
+    data-typewrite="Merci de nous avoir lu,\nMax, Nabil & Kellian"
+    style="padding: 48px 0 0; font-size: 2rem; color: var(--muted); font-family: 'AntonyLark', cursive; font-style: normal; line-height: 1.7;"
+  ></div>
+
   </div>
 
   <!-- ░░░ LIGHTBOX ░░░ -->
@@ -1032,6 +1061,68 @@
     document.addEventListener('selectstart',  function (e) { e.preventDefault(); });
     document.addEventListener('dragstart',    function (e) { e.preventDefault(); });
     document.addEventListener('copy',         function (e) { e.preventDefault(); });
+
+    // ── Natural typewriter on viewport entry ────────────────
+    (function () {
+      const typeTargets = Array.from(document.querySelectorAll('[data-typewrite]'));
+      const greeting = document.getElementById('greeting-text');
+      const mainContent = document.getElementById('main-content');
+
+      function revealMainContent() {
+        if (!mainContent || mainContent.classList.contains('is-visible')) return;
+        mainContent.classList.add('reveal-ready');
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            mainContent.classList.add('is-visible');
+          });
+        });
+      }
+
+      function nextDelay(ch) {
+        let delay = 8 + Math.random() * 28;
+        if (ch === ' ') delay += 8 + Math.random() * 20;
+        if (/[,.;:!?]/.test(ch)) delay += 35 + Math.random() * 90;
+        if (ch === '\n') delay += 60 + Math.random() * 120;
+        if (Math.random() < 0.1) delay += 20 + Math.random() * 60;
+        return Math.round(delay);
+      }
+
+      function typeText(el, text, onDone) {
+        let i = 0;
+
+        function step() {
+          if (i >= text.length) {
+            if (typeof onDone === 'function') onDone();
+            return;
+          }
+          el.textContent += text.charAt(i);
+          const ch = text.charAt(i);
+          i += 1;
+          setTimeout(step, nextDelay(ch));
+        }
+
+        step();
+      }
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          if (el.dataset.typed === '1') return;
+          el.dataset.typed = '1';
+          el.textContent = '';
+          const raw = el.getAttribute('data-typewrite') || '';
+          const normalized = raw.replace(/\\n/g, '\n');
+          typeText(el, normalized, el === greeting ? revealMainContent : null);
+          observer.unobserve(el);
+        });
+      }, { threshold: 0.2 });
+
+      typeTargets.forEach(function (el) {
+        el.textContent = '';
+        observer.observe(el);
+      });
+    })();
   </script>
 
 </body>
